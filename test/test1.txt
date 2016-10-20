@@ -1,0 +1,68 @@
+b a COMMON buk
+aa
+jeden dwa COMMON PART trzy cztery
+--- 1----------------------------------
+Q common W line a nr.1
+common line nr.2
+only first nr.1
+only fisrt nr.2
+common line nr.3
+common line nr.4
+common line nr.5
+common line nr.6
+
+--- 2----------------------------------
+common line a nr.1
+common line nr.2
+only first nr.1
+only fisrt nr.2
+common line nr.3
+common line nr.4
+common line nr.5
+common line nr.6
+--- 3----------------------------------
+common line a nr.1
+common line nr.2
+only first nr.1
+only fisrt nr.2
+common line nr.3
+common line nr.4
+common line nr.5
+common line nr.6
+--- 4----------------------------------
+common line a nr.1
+common line nr.2
+only first nr.1
+only fisrt nr.2
+common line nr.3
+common line nr.4
+common line nr.5
+common line nr.6
+--- 5----------------------------------
+common line a nr.1
+common line nr.2
+only first nr.1
+only fisrt nr.2
+common line nr.3
+common line nr.4
+common line nr.5
+common line nr.6
+--- 6----------------------------------
+common line a nr.1
+common line nr.2
+only first nr.1
+only fisrt nr.2
+common line nr.3
+common line nr.4
+common line nr.5
+common line nr.6
+--- 7----------------------------------
+common line a nr.1
+common line nr.2
+only first nr.1
+only fisrt nr.2
+common line nr.3
+common line nr.4
+common line nr.5
+common line nr.6
+

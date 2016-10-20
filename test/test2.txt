@@ -1,0 +1,68 @@
+COMMON
+aa
+bla bla COMMON PART
+--- 1----------------------------------
+common X line Y nr.1
+common line nr.2
+common line nr.3
+common line nr.4
+only second nr.1
+only second nr.2
+common line nr.5
+common line nr.6
+--- 2----------------------------------
+common line nr.1
+common line nr.2
+common line nr.3
+common line nr.4
+only second nr.1
+only second nr.2
+common line nr.5
+
+
+common line nr.6
+--- 3----------------------------------
+common line nr.1
+common line nr.2
+common line nr.3
+common line nr.4
+only second nr.1
+only second nr.2
+common line nr.5
+common line nr.6
+--- 4----------------------------------
+common line nr.1
+common line nr.2
+common line nr.3
+common line nr.4
+only second nr.1
+only second nr.2
+common line nr.5
+common line nr.6
+--- 5----------------------------------
+common line nr.1
+common line nr.2
+common line nr.3
+common line nr.4
+only second nr.1
+only second nr.2
+common line nr.5
+common line nr.6
+--- 6----------------------------------
+common line nr.1
+common line nr.2
+common line nr.3
+common line nr.4
+only second nr.1
+only second nr.2
+common line nr.5
+common line nr.6
+--- 7----------------------------------
+common line nr.1
+common line nr.2
+common line nr.3
+common line nr.4
+only second nr.1
+only second nr.2
+common line nr.5
+common line nr.6

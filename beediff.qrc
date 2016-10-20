@@ -1,0 +1,21 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+   <file>img/beediff.png</file>
+   <file>img/qt.png</file>
+   <file>img/exit.png</file>
+   <file>img/configure.png</file>
+   <file>img/colors.png</file>
+   <file>img/fonts.png</file>
+   <file>img/to_left.png</file>
+   <file>img/to_right.png</file>
+   <file>img/remove.png</file>
+   <file>img/floppy.png</file>
+   <file>img/question.png</file>
+   <file>img/merge_to_left.png</file>
+   <file>img/merge_to_right.png</file>
+   <file>img/del_on_left.png</file>
+   <file>img/del_on_right.png</file>
+   <file>img/numbers.png</file>
+   <file>img/sync.png</file>
+</qresource>
+</RCC>
