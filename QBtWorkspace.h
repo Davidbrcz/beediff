@@ -43,95 +43,101 @@ class QBtOperator;
 
 /*------- class declaration:
 -------------------------------------------------------------------*/
-class QBtWorkspace : public QWidget
-{
-   Q_OBJECT
+class QBtWorkspace : public QWidget {
+  Q_OBJECT
 
-//******* CONSTRUCTION / DESTRUCTION *******
+  //******* CONSTRUCTION / DESTRUCTION *******
 public:
-   QBtWorkspace( QWidget* = 0 );
-   ~QBtWorkspace();
-private:
-   QBtWorkspace( const QBtWorkspace& );
-   QBtWorkspace& operator=( const QBtWorkspace& );
+  QBtWorkspace(QWidget * = 0);
+  ~QBtWorkspace();
 
-//******* CONSTANTS *******
 private:
-   static const char* const NOT_FILE;
-   static const char* const NO_SELECTED;
-   static const char* const FILES_EQUAL;
+  QBtWorkspace(const QBtWorkspace &);
+  QBtWorkspace &operator=(const QBtWorkspace &);
 
-//******* MEMBERS *******
+  //******* CONSTANTS *******
 private:
-   QPushButton*  const saveA_btn_;
-   QPushButton*  const saveB_btn_;
-   QPushButton*  const openA_btn_;
-   QPushButton*  const openB_btn_;
-   QComboBox*    const pathA_cbx_;
-   QComboBox*    const pathB_cbx_;
-   QScrollBar*   const scrollA_bar_;
-   QScrollBar*   const scrollB_bar_;
-   QBtBrowser*   const browserA_;
-   QBtBrowser*   const browserB_;
-   QBtIndicator* const indicatorA_;
-   QBtIndicator* const indicatorB_;
-   QBtOperator*  const operatorA_;
-   QBtOperator*  const operatorB_;
-   QBtSeparator* const separator_;
-   QString             dirA_;
-   QString             dirB_;
-   bool                can_scroll_;
+  static const char *const NOT_FILE;
+  static const char *const NO_SELECTED;
+  static const char *const FILES_EQUAL;
 
-//******* METHODS *******
+  //******* MEMBERS *******
+private:
+  QPushButton *const next;
+  QPushButton *const previous;
+
+  QPushButton *const saveA_btn_;
+  QPushButton *const saveB_btn_;
+  QPushButton *const openA_btn_;
+  QPushButton *const openB_btn_;
+  QComboBox *const pathA_cbx_;
+  QComboBox *const pathB_cbx_;
+  QScrollBar *const scrollA_bar_;
+  QScrollBar *const scrollB_bar_;
+  QBtBrowser *const browserA_;
+  QBtBrowser *const browserB_;
+  QBtIndicator *const indicatorA_;
+  QBtIndicator *const indicatorB_;
+  QBtOperator *const operatorA_;
+  QBtOperator *const operatorB_;
+  QBtSeparator *const separator_;
+  QString dirA_;
+  QString dirB_;
+  bool can_scroll_;
+
+  //******* METHODS *******
 public:
-   void lft_read_file  ( const QString& );
-   void rgt_read_file  ( const QString& );
-   void save           ();
-   bool save_on_exit   ();
-   void del_on_A       ();
-   void del_on_B       ();
-   void merge_to_A     ();
-   void merge_to_B     ();
+  void lft_read_file(const QString &);
+  void rgt_read_file(const QString &);
+  void save();
+  bool save_on_exit();
+  void del_on_A();
+  void del_on_B();
+  void merge_to_A();
+  void merge_to_B();
 
 private:
-   void updates_enable       ( bool );
-   void document_changed     ( bool, bool );
-   void showEvent            ( QShowEvent* );
-   void customEvent          ( QEvent* );
-   void update_looks         ();
-   void update_outside_looks ();
-   void save_config          () const;
-   void restore_config       ();
-   void check_fpath_history  ( QComboBox* );
-   void remove_no_selected   ( QComboBox* );
-   void remove_from_left     ( int, bool = true );
-   void remove_from_right    ( int, bool = true );
-   void move_from_left       ( int, bool = true );
-   void move_from_right      ( int, bool = true );
-   void change_from_left     ( int, bool = true );
-   void change_from_right    ( int, bool = true );
-   void update_all           ();
-   void update_lft_cbox      ( bool = true );
-   void update_rgt_cbox      ( bool = true );
-   void befor_automation     ();
-   void after_automation     ();
-   void are_the_same         ();
+  void updates_enable(bool);
+  void document_changed(bool, bool);
+  void showEvent(QShowEvent *);
+  void customEvent(QEvent *);
+  void update_looks();
+  void update_outside_looks();
+  void save_config() const;
+  void restore_config();
+  void check_fpath_history(QComboBox *);
+  void remove_no_selected(QComboBox *);
+  void remove_from_left(int, bool = true);
+  void remove_from_right(int, bool = true);
+  void move_from_left(int, bool = true);
+  void move_from_right(int, bool = true);
+  void change_from_left(int, bool = true);
+  void change_from_right(int, bool = true);
+  void update_all();
+  void update_lft_cbox(bool = true);
+  void update_rgt_cbox(bool = true);
+  void befor_automation();
+  void after_automation();
+  void are_the_same();
 private slots:
-   void update_request();
-   void lft_fpath_activated( const QString& );
-   void rgt_fpath_activated( const QString& );
-   void lft_file_selection();
-   void rgt_file_selection();
-   void ready();
-   void browser_A_scrolled( int );
-   void browser_B_scrolled( int );
-   void save_A();
-   void save_B();
+  void update_request();
+  void lft_fpath_activated(const QString &);
+  void rgt_fpath_activated(const QString &);
+  void lft_file_selection();
+  void rgt_file_selection();
+  void ready();
+  void browser_A_scrolled(int);
+  void browser_B_scrolled(int);
+  void save_A();
+  void save_B();
+
+  void next_pair();
+  void previous_pair();
 signals:
-   void stat_total( int );
-   void stat_chg  ( int );
-   void stat_add  ( int );
-   void stat_del  ( int );
+  void stat_total(int);
+  void stat_chg(int);
+  void stat_add(int);
+  void stat_del(int);
 };
 
 #endif // INCLUDED_QBtWorkspace_h
