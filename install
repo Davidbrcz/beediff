@@ -1,0 +1,13 @@
+#!/bin/bash
+
+qmake-qt4
+make clean
+rm -f beediff
+make
+strip beediff
+
+DEST_PATH="/home/$USER/beediff"
+mkdir -p $DEST_PATH
+install -p -s -t $DEST_PATH beediff
+install -p -t $DEST_PATH licence.txt img/beediff.png
+
